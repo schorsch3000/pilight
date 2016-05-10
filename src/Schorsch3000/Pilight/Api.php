@@ -35,7 +35,7 @@ class Api
     {
         $this->loadSwitches();
         $this->checkSwitchNameValid($name);
-        return $this->switchNames[$name];
+        return $this->switchNames[$name]['state'];
     }
 
     public function setSwitchState($name, $state, $type)
